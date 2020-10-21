@@ -10,6 +10,7 @@ import { useStateValue } from './StateProvider'
 import Payment from './Payment'
 import { loadStripe } from '@stripe/stripe-js'
 import { Elements } from '@stripe/react-stripe-js'
+import Orders from './Orders'
 
 const promise = loadStripe(
   "pk_test_51HeB8pIuqHuGWmz9wBmbBCWhveu7OBsbORNEbHHwfGPi1ydgG3opFtbHUdzafa69fs2hyoZweyWGJoyeNUbHCpjD00SiBGGX28"
@@ -27,13 +28,13 @@ function App() {
         // user just logged in / the user was logged in
         dispatch({
           type: 'SET_USER',
-          user: authUser
+          user: authUser,
         })
       } else {
         // the user is logged out
         dispatch({
           type: 'SET_USER',
-          user: null
+          user: null,
         })
       }
     })
@@ -43,6 +44,10 @@ function App() {
     <Router>
       <div className="app">
         <Switch>
+          <Route path="/orders">
+            <Header />
+            <Orders />
+          </Route>
           <Route path="/login">
             <Login />
           </Route>

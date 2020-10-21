@@ -7,10 +7,10 @@ import './Payment.css'
 import { useStateValue } from './StateProvider'
 import { getBasketTotal } from './reducer'
 import axios from './axios'
-// import { loadStripe } from '@stripe/stripe-js'
+import { db } from './firebase'
 
 function Payment() {
-  const [{ basket, user }] = useStateValue();
+  const [{ basket, user }, dispatch] = useStateValue();
   const history = useHistory();
 
   const stripe = useStripe();
@@ -35,6 +35,8 @@ function Payment() {
     getClientSecret();
   }, [basket]);
 
+  console.log('THE SECRET IS >>>', clientSecret)
+
   const handleSubmit = async (event) => {
     // does fancy stripe stuff...
     event.preventDefault();
@@ -47,9 +49,24 @@ function Payment() {
     }).then(({ paymentIntent }) => {
       //paymentIntent = payment confirmation
 
+      db
+        .collection('users')
+        .doc(user?.uid)
+        .collection('orders')
+        .doc(paymentIntent.id)
+        .set({
+          basket: basket,
+          amount: paymentIntent.amount,
+          created: paymentIntent.created
+        })
+
       setSucceeded(true);
       setError(null)
       setProcessing(false)
+
+      dispatch({
+        type: 'EMPTY_BASKET'
+      })
 
       history.replace('/orders')
     })
