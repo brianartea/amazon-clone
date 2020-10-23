@@ -35,7 +35,7 @@ function Login() {
   return (
     <div className="login">
       <Link to="/">
-        <img className="login__logo" src="https://expertdesign.cc/amazon-clone/src/images/Amazon-login-logo.png" alt="" />
+        <img className="login__logo" src="https://expertdesign.cc/amazon-images/amazon-login-logo.png" alt="" />
       </Link>
       <div className="login__container">
         <h1>Sign-in</h1>
@@ -50,9 +50,13 @@ function Login() {
         <p>
           By signing in you agree to the AMAZON FAKE CLONE Conditions of Use & Sale. Please see our Privacy Notice, our Cookies Notice and Interest-Based Ads Notice.
         </p>
-        <h5 className="divider">New to Amazon?</h5>
+        <h5 className="divider divider-text">New to Amazon?</h5>
         <button type="submit" onClick={register} className="login__registerButton">Create your Amazon account</button>
       </div>
+      {/* <div>
+        <h5 className="divider divider-text">New to Amazon?</h5>
+        <button type="submit" onClick={register} className="login__registerButton">Create your Amazon account</button>
+        </div> */}
     </div>
   )
 }
