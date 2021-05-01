@@ -1,3 +1,29 @@
+# Amazon Clone
+
+![](https://expertdesign.cc/amazon/screen1.png)
+
+##
+
+![](https://expertdesign.cc/amazon/screen2.png)
+
+##
+
+![](https://expertdesign.cc/amazon/screen3.png)
+
+##
+
+![](https://expertdesign.cc/amazon/screen4.png)
+
+##
+
+![](https://expertdesign.cc/amazon/screen5.png)
+
+##
+
+![](https://expertdesign.cc/amazon/screen6.png)
+
+## It's Live 🚀 Visit here ==> https://expertdesign.cc/amazon/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
