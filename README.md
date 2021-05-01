@@ -1,26 +1,26 @@
 # Amazon Clone
 
-![](https://expertdesign.cc/amazon/screen1.png)
+![](https://expertdesign.cc/amazon/screen1.jpg)
 
 ##
 
-![](https://expertdesign.cc/amazon/screen2.png)
+![](https://expertdesign.cc/amazon/screen2.jpg)
 
 ##
 
-![](https://expertdesign.cc/amazon/screen3.png)
+![](https://expertdesign.cc/amazon/screen3.jpg)
 
 ##
 
-![](https://expertdesign.cc/amazon/screen4.png)
+![](https://expertdesign.cc/amazon/screen4.jpg)
 
 ##
 
-![](https://expertdesign.cc/amazon/screen5.png)
+![](https://expertdesign.cc/amazon/screen5.jpg)
 
 ##
 
-![](https://expertdesign.cc/amazon/screen6.png)
+![](https://expertdesign.cc/amazon/screen6.jpg)
 
 ## It's Live 🚀 Visit here ==> https://expertdesign.cc/amazon/
 
